@@ -738,11 +738,12 @@ h1, h2, h3, h4, h5,
     font-weight: bold; }
   .schedule-wrap .cta a {
     text-align: center;
-    background: #ffd18b;
+    background: #fcb74d;
     color: #fff;
     padding: 10px 20px; }
     .schedule-wrap .cta a:hover{
       color: #f26b78;
+      background: #ffd18b;
     }
     .schedule-wrap .cta a .arrow {
       font-size: 1.2rem;
