@@ -26,7 +26,7 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <link rel="icon" href="images/logo_icon.png">
+  <link rel="icon" href="images/LMTA_Icon.png">
 
 
 
@@ -50,7 +50,7 @@
 
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo"><img style="max-width:50px; max-height:50px; padding-right: 15px;"class="d-inline" src="images/logo_icon.png"><a href="index.html">LMTA<span>.</span> </a></div>
+          <div class="site-logo"><img style="max-width:50px; max-height:50px; padding-right: 15px;"class="d-inline" src="images/LMTA_Icon.png"><a href="index.html">Lower Mainland Tutoring Academy<span>.</span> </a></div>
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
@@ -276,9 +276,10 @@
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-md-8  section-heading">
-            <span class="subheading">Courses</span>
+            <span class="subheading">Classes</span>
             <h2 class="heading mb-3">What can I learn?</h2>
-            <p>LMTA offers a vast variety </p>
+            <p>LMTA offers a vast variety of subjects and courses. You name it, we've got it.
+              If there is a particular subject you would like to learn, feel free to reach out to any of our tutors and see if they would be willing to offer services.</p>
           </div>
         </div>
 
@@ -858,74 +859,67 @@
     </div>
     end of testimonial section-->
 
-    <div class="site-section bg-light contact-wrap" id="contact-section">
+    <div class="site-section contact-wrap" id="contact-section">
       <div class="container">
         
         <div class="row justify-content-center text-center mb-5">
           <div class="col-md-8  section-heading">
             <span class="subheading">Get In Touch</span>
             <h2 class="heading mb-3">Contact Us</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-              texts.
+            <p>Get in touch with LMTA and learn more about what we have to offer!
             </p>
           </div>
         </div>
 
+
         <div class="row justify-content-center">
           <div class="col-md-7">
-            <form method="post" data-aos="fade">
-              <div class="form-group row">
-                <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Last name">
+            <a href="mailto:andyshenproper@gmail.com">
+              <div class="class-item align-items-center">
+                <div class="class-item-text text-center">
+                  <h2 style="padding-top: 20px; padding-bottom: 20px">Send us an email!</h2>
                 </div>
               </div>
-    
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Subject">
+            </a>
+            <!--
+              <form method="post" data-aos="fade">
+                <div class="form-group row">
+                  <div class="col-md-6 mb-3 mb-lg-0">
+                    <input type="text" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Last name">
+                  </div>
                 </div>
-              </div>
-    
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="email" class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10"
-                    placeholder="Write your message here."></textarea>
-                </div>
-              </div>
-    
-              <div class="form-group row">
-                <div class="col-md-6">
-    
-                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
-                </div>
-              </div>
-    
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="schedule-wrap2 clearfix">
-      <div class="d-md-flex align-items-center">
-        <div class="hours mr-md-4 mb-4 mb-lg-0">
-          <strong class="d-block">Hours</strong>
-          Opening: 7:30am &mdash;
-          Closing: 9:00pm
-        </div>
-        <div class="cta ml-auto">
-          <a href="#" class="d-flex d-md-flex align-items-center btn">
-            <span class="mx-auto"> <span>Contact us</span> <span class="arrow icon-keyboard_arrow_right"></span></span>
-          </a>
-        </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" placeholder="Subject" id="subject">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <textarea class="form-control" id="" cols="30" rows="10"
+                      placeholder="Write your message here." id="email-body"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-md-6">
+
+                    <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message" onclick="sendContactEmail()">
+                  </div>
+                </div>
+
+              </form>-->
+            </div>
+          </div>
       </div>
     </div>
 
@@ -934,29 +928,28 @@
         <div class="row">
           <div class="col-md-4">
             <h3 class="text-dark">About LMTA</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <p>The Lower Mainland Tutoring Academy is a tutoring academy with the intent of helping other students learn and become passionate about topics that we ourselves are passionate about.</p>
           </div>
 
           <div class="col-md-3 ml-auto">
             <h3 class="text-dark">Links</h3>
             <ul class="list-unstyled footer-links">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Classes</a></li>
-              <li><a href="#">Schedule</a></li>
-              <li><a href="#">Tutors</a></li>
+              <li><a href="#course-section">Classes</a></li>
+              <li><a href="#tutor-section">Tutors</a></li>
+              <li><a href="#contact-section">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-md-4">
-            <h3 class="text-dark">Subscribe</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+            <h3 class="text-dark">Socials</h3>
+            <p>Follow us on social media!
             </p>
-            <form action="#">
-              <div class="d-flex mb-5">
-                <input type="text" class="form-control rounded-0" placeholder="Email">
-                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
-              </div>
-            </form>
+            <ul class="ftco-footer-social list-unstyled mt-4 align-content-center justify-content-center text-left">
+              <li><a href="https://www.instagram.com/airborneicarus/"><span class="icon-instagram"></span></a></li>
+              <li><a href="https://www.instagram.com/airborneicarus/"><span class="icon-instagram"></span></a></li>
+              <li><a href="https://www.instagram.com/airborneicarus/"><span class="icon-instagram"></span></a></li>
+            </ul>
           </div>
 
         </div>
