@@ -1333,10 +1333,23 @@
             <p>Follow us on social media!
             </p>
             <ul class="ftco-footer-social list-unstyled mt-4 align-content-center justify-content-center text-left">
-              <li><a href="https://www.instagram.com/lmt.academy/"><span class="icon-instagram"></span></a></li>
-              <li><a href="https://www.instagram.com/airborneicarus/"><span class="icon-wechat"></span></a></li>
+
+              <li><a href="https://www.instagram.com/lmt.academy/" target="_blank"><span class="icon-instagram"></span></a></li>
+
+              <li><a onclick="openOverlay('wechat')"
+                style="color: #7fd6ff; cursor:pointer;"
+              ><span class="icon-wechat"></span></a></li>
+
               <li><a href="mailto:lmt.academy@gmail.com"><span class="icon-mail_outline"></span></a></li>
+
             </ul>
+          </div>
+
+          <div id="wechat" class="overview" onclick="closeOverlay('wechat')">
+            <h2 class="text-center">Find us on WeChat</h2>
+            <p class="text-center">Search LMTA on WeChat<br>
+              WeChat ID: lmt_academyinfo
+            </p>
           </div>
 
         </div>
