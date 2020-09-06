@@ -1,12 +1,14 @@
 /* Base */
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+}
 
 body {
   line-height: 1.7;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #989898; }
+  color: #989898;
+}
 
 ::-moz-selection {
   background: #000;
@@ -70,6 +72,65 @@ h1, h2, h3, h4, h5,
   .offcanvas-menu .site-wrap:before {
     opacity: 1;
     visibility: visible; }
+
+
+.arrow {
+    padding-top:50px;
+  text-align: center;
+    color:#000;
+  margin: 8% 0;
+}
+
+.arrow a{
+    font-size: 30px;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*accordion*/
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active-accordion, .accordion:hover {
+  background-color: #f6f6f6;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #f6f6f6;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*accordion*/
 
 .btn {
   text-transform: uppercase;
@@ -344,7 +405,7 @@ h1, h2, h3, h4, h5,
   font-size: 1.3rem;
   text-transform: uppercase; }
   .site-logo a {
-    color: #fff; }
+    color: #000; }
     .site-logo a span {
       color: #7fd6ff; }
 
@@ -375,11 +436,11 @@ h1, h2, h3, h4, h5,
       display: inline-block; }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 5px 20px;
-        color: #fff;
+        color: #000;
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #fff; }
+          color: rgba(0,0,0,0.5); }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -675,7 +736,7 @@ h1, h2, h3, h4, h5,
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #ccc;
+    background: #fff;
     border-bottom-right-radius: 0px;
     background-size: cover;
     background-position: center;
@@ -686,7 +747,7 @@ h1, h2, h3, h4, h5,
   .intro-section:after {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     top: 0;
     left: 0;
     right: 0;
@@ -695,16 +756,16 @@ h1, h2, h3, h4, h5,
   .intro-section h1 {
     font-size: 4rem;
     font-weight: 900;
-    color: #fff; }
+    color: #000; }
     @media (max-width: 991.98px) {
       .intro-section h1 {
         font-size: 2rem; } }
   .intro-section .desc {
-    color: white;
+    color: #000;
     font-size: 1.4rem;
     max-width: 700px; }
   .intro-section a {
-    color: #fff;
+    color: #000;
     text-decoration: underline; }
     .intro-section a:hover {
       text-decoration: none; }
@@ -955,12 +1016,12 @@ h1, h2, h3, h4, h5,
     top: 0;
     z-index: 1; }
   .bgimg .lead {
-    color: #fff; }
+    color: #000; }
   .bgimg > .container {
     z-index: 2;
     position: relative; }
   .bgimg h2 {
-    color: #fff;
+    color: #000;
     font-size: 3rem;
     margin-top: 0;
     font-weight: bold; }
@@ -968,7 +1029,7 @@ h1, h2, h3, h4, h5,
       .bgimg h2 {
         font-size: 2rem; } }
   .bgimg a {
-    color: #fff;
+    color: #000;
     text-decoration: underline; }
     .bgimg a:hover {
       text-decoration: none; }

@@ -247,7 +247,7 @@ jQuery(document).ready(function($) {
 
 	// navigation
   var OnePageNavigation = function() {
-    var navToggler = $('.site-menu-toggle');
+    var navToggler = $('.site-menu-toggle'); 
    	$("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a", function(e) {
       e.preventDefault();
 
@@ -260,6 +260,20 @@ jQuery(document).ready(function($) {
       });
 
     });
+    $("body").on("click", ".arrow-link", function(e) {
+      e.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        'scrollTop': $(hash).offset().top
+      }, 600, 'easeInOutCirc', function(){
+        window.location.hash = hash;
+      });
+
+    });
+      
+      
   };
   OnePageNavigation();
 
@@ -288,3 +302,22 @@ jQuery(document).ready(function($) {
 	});
 
 });
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active-accordion");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
