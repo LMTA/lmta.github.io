@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5,
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+    border-radius: 20px;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -124,7 +125,7 @@ h1, h2, h3, h4, h5,
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: #f6f6f6;
+  background-color: #fff;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -934,9 +935,7 @@ h1, h2, h3, h4, h5,
   font-weight: 900; }
 
 .class-item {
-  border-radius: 4px;
-  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
   overflow: hidden;
   margin-bottom: 30px;
   position: relative;
@@ -950,9 +949,7 @@ h1, h2, h3, h4, h5,
     flex: 0 0 120px; }
     .class-item .class-item-thumbnail img {
       max-width: 100px;
-      border-radius: 4px;
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px; }
+      border-radius: 100px; }
   .class-item .class-item-text h2 {
     font-size: 18px;
     margin-bottom: 0px; }
@@ -963,9 +960,6 @@ h1, h2, h3, h4, h5,
   .class-item .class-item-text span {
     font-size: 16px; }
   .class-item:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
     z-index: 2;
     background: #7fd6ff;
     cursor: pointer;
